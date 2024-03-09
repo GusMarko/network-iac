@@ -38,7 +38,7 @@ def replace_tfvars(env, boto3_session):
 
 
 def get_environment():
-    env_name = os.environ.get("GITHUB_REF", "")
+    env_name = os.environ.get("GITHUB_BASE_REF", "")
     env_name_parts = env_name.split("/")
     env_name = env_name_parts[-1]
     if env_name == "main":
