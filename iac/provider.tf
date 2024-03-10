@@ -3,9 +3,9 @@ terraform {
     encrypt    = true
     bucket     = "mg-terraform-state-storage"
     key        = "network-iac/terraform.tfstate"
-    region     = "eu-central-1"
-    access_key = ""
-    secret_key = ""
+    region     = "aws_region_placeholder"
+    access_key = "access_key_placeholder"
+    secret_key = "secret_key_placeholder"
   }
 
   required_providers {
